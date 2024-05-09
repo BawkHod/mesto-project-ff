@@ -24,12 +24,12 @@ function createCard (cardData, deletion) {
 }
 
 // @todo: Функция удаления карточки
-function cardDelete (card) {
+function deleteCard (card) {
   card.closest('.places__item').remove()
 }
 
 // @todo: Вывести карточки на страницу
 initialCards.forEach (function (data){
-  const cardElement = createCard (data, cardDelete);
+  const cardElement = createCard (data, deleteCard);
   placeList.append(cardElement)
 })
