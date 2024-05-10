@@ -25,7 +25,7 @@ function createCard (cardData, deletion) {
 
 // @todo: Функция удаления карточки
 function deleteCard (card) {
-  card.closest('.places__item').remove()
+  card.remove()
 }
 
 // @todo: Вывести карточки на страницу
